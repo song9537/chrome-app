@@ -106,6 +106,8 @@ input[type="text"] {
   height: 40px;
   font-size: 20px;
   border: none;
+  background-color: black;
+  color: white;
 }
 
 #todo-list {
@@ -117,4 +119,11 @@ input[type="text"] {
 
 .todoList {
   margin-bottom: 10px;
+}
+
+#login-form {
+  font-size: 40px;
+  position: absolute;
+  left: 150px;
+  top: 100px;
 }
