@@ -1,3 +1,115 @@
 .hidden {
   display: none;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  width: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #111;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 64px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+
+.memory {
+  width: 600px;
+  height: 800px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  margin: 15px;
+}
+
+#greeting {
+  font-size: 60px;
+  position: absolute;
+  left: 150px;
+  top: 60px;
+}
+
+.greeting {
+  font-size: 40px;
+  position: absolute;
+  left: 150px;
+  top: 200px;
+}
+
+#quote {
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote :first-child {
+  padding-bottom: 10px;
+}
+
+#clock {
+  font-size: 100px;
+  display: flex;
+  width: 50%;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.555);
+  color: white;
+}
+
+#todo-form {
+  position: absolute;
+  left: 150px;
+  top: 300px;
+}
+
+input[type="text"] {
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+}
+
+#todo-list {
+  position: absolute;
+  left: 150px;
+  top: 400px;
+  font-size: 20px;
+}
+
+.todoList {
+  display: flex;
+  padding-bottom: 10px;
+}

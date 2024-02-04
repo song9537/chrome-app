@@ -7,29 +7,39 @@
     <title>Chrome App</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input required type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div class="left">
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <button>Log In</button>
+      </form>
+      <h1 id="greeting" class="hidden greeting"></h1>
+      <span class="greeting">What is on your mind today?</span>
+      <form id="todo-form">
+        <input
+          required
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="right">
+      <h2 id="clock">00:00:00</h2>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
     </div>
+
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
