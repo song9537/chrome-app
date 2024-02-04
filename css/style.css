@@ -11,6 +11,8 @@ body {
   display: flex;
   width: 100%;
   font-family: "Open Sans Condensed", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .left {
@@ -25,8 +27,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  color: #111;
   font-size: 30px;
   font-weight: 700;
   line-height: 64px;
@@ -60,16 +60,22 @@ body {
 
 #quote {
   width: 50%;
-  height: 100px;
+  height: 130px;
   position: absolute;
   left: 50px;
   bottom: 60px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 800;
   flex-direction: column;
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+  margin: 0px 100px;
+  padding: 10px;
+  background-color: rgba(245, 245, 245, 0.712);
+  border-radius: 25px;
+  color: black;
+  text-transform: uppercase;
 }
 
 #quote :first-child {
@@ -85,8 +91,8 @@ body {
   align-items: center;
   margin: 0px;
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.555);
-  color: white;
+  background-color: rgba(245, 245, 245, 0.712);
+  color: black;
 }
 
 #todo-form {
@@ -110,6 +116,5 @@ input[type="text"] {
 }
 
 .todoList {
-  display: flex;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
